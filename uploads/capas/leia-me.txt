@@ -1,0 +1,1 @@
+Pasta usada para armazenar as imagens de capa dos cursos.

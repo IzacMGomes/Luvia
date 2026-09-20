@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trilha — Aprenda, cresça e conquiste sua carreira</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+    <div class="container">
+        <a href="#inicio" class="marca"><span class="icone-marca"></span> Trilha</a>
+        <div class="nav-links">
+            <a class="link-nav" href="#cursos">Cursos</a>
+            <a class="link-nav" href="#como-funciona">Trilhas</a>
+            <a class="link-nav" href="#instrutores">Instrutores</a>
+            <a class="link-nav" href="#comunidade">Comunidade</a>
+        </div>
+        <div class="nav-acoes">
+            <a class="entrar" href="login.php">Entrar</a>
+            <a class="botao primario pequeno" href="cadastro.php">Começar grátis</a>
+        </div>
+        <button class="menu-mobile-botao" id="botaoMenuMobile" aria-label="Abrir menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<div class="menu-mobile-painel" id="menuMobile">
+    <a href="#cursos">Cursos</a>
+    <a href="#como-funciona">Trilhas</a>
+    <a href="#instrutores">Instrutores</a>
+    <a href="#comunidade">Comunidade</a>
+    <a href="login.php">Entrar</a>
+    <a class="botao primario" href="cadastro.php">Começar grátis</a>
+</div>
+
+<header class="hero" id="inicio">
+    <div class="container">
+        <div class="hero-texto">
+            <h1>Aprenda, cresça e<br>
+                <span class="destaque">conquiste<svg viewBox="0 0 200 12" preserveAspectRatio="none"><path d="M2 9 C 50 2, 150 2, 198 9" stroke="#2F5FF6" stroke-width="4" fill="none" stroke-linecap="round"/></svg></span>
+                sua carreira
+            </h1>
+            <p>A Trilha conecta você aos melhores cursos de tecnologia, negócios, design e entre Diversos tipos de caminhos difrentes. Você decide por onde seguir — completamente gratuitos. Do primeiro clique ao seu próximo cargo.</p>
+            <div class="hero-ctas">
+                <a class="botao primario" href="cadastro.php">Explorar cursos gratuitos →</a>
+                <a class="botao secundario" href="#como-funciona">Ver como funciona</a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="mockup-curso">
+                <div class="mockup-topo">
+                    <span class="mockup-tag">Em andamento</span>
+                    <h3>Ingles do Basico ao Avançado</h3>
+                    <p>Módulo 3 de 12 · Construindo Frases</p>
+                </div>
+                <div class="mockup-corpo">
+                    <div class="mockup-linha feita"><span class="bola">✓</span> Primeiros Passo</div>
+                    <div class="mockup-linha feita"><span class="bola">✓</span> Inglês do Dia a Dia</div>
+                    <div class="mockup-linha ativa"><span class="bola">▶</span> Conversação Básica</div>
+                    <div class="mockup-linha"><span class="bola">4</span> Expandindo o Vocabulário</div>
+                </div>
+            </div>
+
+            <div class="flutuante card-concluida" id="cardConcluida">
+                <span class="icone">✓</span>
+                <div class="texto"><span>Aula concluída</span><strong>React Hooks</strong></div>
+            </div>
+
+            <div class="flutuante card-progresso" id="cardProgresso">
+                <div class="linha-topo"><span class="icone">🏆</span><strong>Seu progresso</strong></div>
+                <span style="font-size:12.5px; color:var(--tinta-dim);">Ingles Avançado</span>
+                <div class="barra"><span id="barraProgresso"></span></div>
+                <span class="pct" id="textoProgresso">0% concluído</span>
+            </div>
+
+            <div class="selo-gratis" id="seloGratis"><span>🎓</span> Grátis</div>
+        </div>
+    </div>
+</header>
+
+<section id="cursos">
+    <div class="container">
+        <div class="cabecalho-secao revelar">
+            <h2>Cursos em destaque</h2>
+            <p>Uma amostra do que você encontra assim que entra na plataforma.</p>
+        </div>
+        <div class="grade-cursos">
+            <div class="card-curso revelar">
+                <div class="capa c1"><img src="img/pexels-santhosh-kanthala-372615-39492347.jpg" alt=""></div>
+                <div class="conteudo">
+                    <div class="categoria">Tecnologia</div>
+                    <h3>Inteligência Artificial para Produtividade</h3>
+                    <p>Entenda como o marketing digital conecta marcas, pessoas e oportunidades no mundo online.
+Aprenda estratégias para criar conteúdos, alcançar seu público e fortalecer sua presença digital.</p>
+                    <div class="rodape-card"><span>🕒 24h de conteúdo</span><span>Iniciante</span></div>
+                </div>
+            </div>
+            <div class="card-curso revelar">
+                <div class="capa c2"><img src="img/pexels-tabtrader-com-app-180445110-24709181.jpg" alt=""></div>
+                <div class="conteudo">
+                    <div class="categoria">estratégias e ações</div> <br>
+                    <h3>Marketing Digital</h3>
+                    <p>Descubra como a inteligência artificial está transformando a forma de trabalhar, criar e aprender.
+Aprenda a utilizar ferramentas de IA para aumentar sua produtividade e explorar novas possibilidades.</p>
+                    <div class="rodape-card"><span>🕒 18h de conteúdo</span><span>Intermediário</span></div>
+                </div>
+            </div>
+            <div class="card-curso revelar">
+                <div class="capa c3"><img src="img/pexels-polina-tankilevitch-6929155.jpg" alt=""></div>
+                <div class="conteudo">
+                    <div class="categoria">Comunicação</div> <br>
+                    <h3>Ingles</h3>
+                    <p>Aprenda inglês de forma prática e progressiva, desenvolvendo sua comunicação e confiança.
+Do básico ao avançado, prepare-se para novas oportunidades e conexões com o mundo.</p>
+                    <div class="rodape-card"><span>🕒 14h de conteúdo</span><span>Avançado</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="secao-como-funciona" id="como-funciona">
+    <div class="container">
+        <div class="cabecalho-secao claro revelar">
+            <span class="eyebrow">Como funciona</span>
+            <h2>Três passos para mudar sua carreira</h2>
+            <p>Um caminho simples, no seu ritmo, sem custo nenhum.</p>
+        </div>
+        <div class="passos">
+            <div class="passo revelar">
+                <div class="badge-numero">🗺️</div>
+                <div class="num">PASSO 01</div>
+                <h3>Escolha sua trilha</h3>
+                <p>Explore o catálogo e escolha o curso que combina com seu objetivo.</p>
+            </div>
+            <div class="passo revelar">
+                <div class="badge-numero">🎯</div>
+                <div class="num">PASSO 02</div>
+                <h3>Aprenda no seu ritmo</h3>
+                <p>Assista às aulas quando quiser e retome de onde parou automaticamente.</p>
+            </div>
+            <div class="passo revelar">
+                <div class="badge-numero">🏆</div>
+                <div class="num">PASSO 03</div>
+                <h3>Conquiste seu espaço</h3>
+                <p>Conclua o curso e receba seu certificado para mostrar o que aprendeu.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="instrutores">
+    <div class="container">
+        <div class="cabecalho-secao revelar">
+            <h2>Aprenda com quem faz</h2>
+            <p>Instrutores que atuam no mercado e trazem prática pra sala de aula.</p>
+        </div>
+        <div class="grade-instrutores">
+            <div class="card-instrutor revelar">
+                <div class="avatar-instrutor">LM</div>
+                <h4>Laura Martins</h4>
+                <span>Front-end</span>
+            </div>
+            <div class="card-instrutor revelar">
+                <div class="avatar-instrutor">RC</div>
+                <h4>Rafael Costa</h4>
+                <span>UX Design</span>
+            </div>
+            <div class="card-instrutor revelar">
+                <div class="avatar-instrutor">BA</div>
+                <h4>Beatriz Alves</h4>
+                <span>Produto</span>
+            </div>
+            <div class="card-instrutor revelar">
+                <div class="avatar-instrutor">TS</div>
+                <h4>Tiago Souza</h4>
+                <span>Back-end</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="secao-comunidade" id="comunidade">
+    <div class="container">
+        <div class="cabecalho-secao revelar">
+            <h2>Uma comunidade que cresce junto</h2>
+            <p>Números de quem já está aprendendo na Trilha.</p>
+        </div>
+        <div class="grade-stats">
+            <div class="revelar">
+                <div class="stat-numero"><span class="contador" data-alvo="300">0</span><span class="plus">+</span></div>
+                <div class="stat-rotulo">Cursos disponíveis</div>
+            </div>
+            <div class="revelar">
+                <div class="stat-numero"><span class="contador" data-alvo="98">0</span><span class="plus">%</span></div>
+                <div class="stat-rotulo">Satisfação dos alunos</div>
+            </div>
+            <div class="revelar">
+                <div class="stat-numero"><span class="contador" data-alvo="100">0</span><span class="plus">%</span></div>
+                <div class="stat-rotulo">Gratuito, sempre</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="cta-final revelar">
+        <h2>Pronto para começar sua jornada?</h2>
+        <p>Crie sua conta gratuita agora e acesse o catálogo completo de cursos.</p>
+        <a class="botao primario" href="cadastro.php">Criar conta grátis →</a>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-marca">
+                <a href="#inicio" class="marca"><span class="icone-marca"></span> Trilha</a>
+                <p>Educação de qualidade, acessível a todos. 100% gratuito.</p>
+            </div>
+            <div class="footer-col">
+                <h5>PLATAFORMA</h5>
+                <a href="#cursos">Cursos</a>
+                <a href="#como-funciona">Trilhas</a>
+                <a href="#instrutores">Instrutores</a>
+                <a href="login.php">Certificados</a>
+            </div>
+            <div class="footer-col">
+                <h5>EMPRESA</h5>
+                <a href="#inicio">Sobre</a>
+                <a href="#inicio">Blog</a>
+                <a href="#inicio">Carreiras</a>
+                <a href="#inicio">Imprensa</a>
+            </div>
+            <div class="footer-col">
+                <h5>SUPORTE</h5>
+                <a href="#inicio">Central de ajuda</a>
+                <a href="#comunidade">Comunidade</a>
+                <a href="#inicio">Termos</a>
+                <a href="#inicio">Privacidade</a>
+            </div>
+        </div>
+        <div class="footer-base">
+            <span>© 2026 Trilha. Todos os direitos reservados.</span>
+            <span>Feito com dedicação para quem quer crescer.</span>
+        </div>
+    </div>
+</footer>
+
+<script src="landing.js"></script>
+</body>
+</html>
